@@ -1,0 +1,225 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+html {
+  background-color: #4e5e6d;
+  background: linear-gradient(#a18963, #e9c1ad);
+  background-image: url(../img/v3.gif);
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+html,
+body {
+  font-family: sans-serif;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+}
+button {
+  cursor: pointer;
+}
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.text_large {
+  font-size: 32px;
+}
+.text_small {
+  font-size: 24px;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  margin-top: 50px; 
+}
+.wrapbg {
+  background-color: #ffffff05;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid #ffffff50;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  padding: 50px;
+  padding-top: 45px;
+}
+
+@media (max-width: 510px) {
+  .wrapper {
+    width: 100%;
+  }
+  .header {
+    justify-content: center;
+  }
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  padding-left: 10px;
+  letter-spacing: 2px;
+}
+.todohero_section {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  align-self: center;
+  width: auto;
+  padding: 12px;
+  border-radius: 11px;
+  letter-spacing: 1px;
+}
+.todohero_section div:last-child {
+  background-color: #ffffff1c;
+  width: 65px;
+  height: 65px;
+  border-radius: 11px;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  letter-spacing: 2px;
+}
+.form {
+  align-self: center;
+  width: 97%;
+  max-width: 455px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 38px;
+}
+.form label {
+  width: 90%;
+}
+.form input {
+  background-color: #ffffff0e;
+  color: #fff;
+  width: 100%;
+  height: 50px;
+  outline: none;
+  border: none;
+  border-radius: 11px;
+  padding: 12px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.form button {
+  width: 50px;
+  height: 50px;
+  border-radius: 11px;
+  background-color: #ffffff50;
+  border: none;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.magicwandicon {
+  color: #ffffffa8;
+  margin: 10px;
+}
+
+.wand :hover {
+  color: #fff;
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+::placeholder {
+  color: rgba(235, 235, 235, 0.795);
+  opacity: 1; /* Firefox */
+}
+
+.todo_list {
+  align-self: center;
+  width: 97%;
+  max-width: 455px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 27px;
+  margin-bottom: 27px;
+  gap: 27px;
+}
+
+/* .todo_item {
+  border: 5px solid red !important;
+} */
+
+.todo_item,
+.edit-form input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  width: 100%;
+  max-width: 455px;
+  border-radius: 25px;
+  font-size: 16px;
+  background-color: #ffffff2d;
+  color: #fff;
+  padding: 12px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ffffff50;
+}
+.edit-form input {
+  outline: transparent;
+  width: calc(100% - 14px);
+  height: calc(100% - 12px);
+  border: transparent;
+}
+.todo_items_left,
+.todo_items_right {
+  display: flex;
+  align-items: center;
+}
+.todo_items_left {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  gap: 12px;
+  font-size: 16px;
+}
+.todo_items_right {
+  gap: 4px;
+}
+.todo_items_right button {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+}
+.credits {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+}
+
+.credits img {
+  width: 50px;
+}
