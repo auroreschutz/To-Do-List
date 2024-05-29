@@ -1,3 +1,6 @@
+![todolist](https://github.com/auroreschutz/To-Do-List/assets/97412286/69dd1fd8-72f7-4258-ba41-878cff1d1cae)
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
